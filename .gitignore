@@ -1,0 +1,79 @@
+# ==========================================
+# Drupal 11 - .Gitignore
+# Track only custom code and sensitive configuration
+# ==========================================
+
+# -----------------------
+# Drupal core & contrib (managed by Composer)
+# -----------------------
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+
+# -----------------------
+# Composer dependencies
+# -----------------------
+/vendor
+/web/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
+
+# Keep composer.lock versioned for consistent environments
+!/composer.lock
+
+# -----------------------
+# Custom site files
+# -----------------------
+/web/sites/*/files
+/web/sites/*/public
+/web/sites/*/private
+/web/sites/*/files-public
+/web/sites/*/files-private
+/web/sites/*/tmp
+/web/sites/*/cache
+/web/sites/*/php
+/web/sites/*/translations
+/web/sites/simpletest
+/web/sites/*/logs
+/web/sites/*/backups
+
+# -----------------------
+# Local and sensitive configs
+# -----------------------
+/web/sites/*/settings*.php
+/web/sites/*/services*.yml
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+
+# -----------------------
+# System-generated files
+# -----------------------
+# Core files should be tracked, unless you use a pure Composer approach
+#/web/.htaccess      # tracked
+#/web/index.php      # tracked
+#/web/update.php     # tracked
+/web/web.config
+/web/INSTALL.txt
+/web/README.txt
+/web/LICENSE.txt
+/web/robots.txt
+/web/example.gitignore
+/web/.ht.router.php
+/web/autoload.php
+
+# -----------------------
+# Editor/IDE files
+# -----------------------
+/.idea
+/.vscode
+*.swp
+*.swo
+*.bak
+*.tmp
