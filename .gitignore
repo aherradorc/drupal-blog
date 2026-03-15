@@ -6,8 +6,6 @@
 # -----------------------
 # Drupal core & contrib (managed by Composer)
 # -----------------------
-/web/modules/contrib
-/web/themes/contrib
 /web/profiles/contrib
 
 # -----------------------
